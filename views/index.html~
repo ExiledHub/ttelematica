@@ -1,0 +1,31 @@
+<!-- Home -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+	<strong>
+	  <a href="">
+	    Proyects
+	  </a>
+	</strong>
+	<strong>
+	  <a href="">
+	    New
+	  </a>
+	</strong>
+      </div>
+    </header>
+
+    <!-- Stuff -->
+    <div class="container">
+      
+    </div>
+
+    <!-- Footer -->
+  </body>
+</html>
