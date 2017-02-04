@@ -1,5 +1,11 @@
-Descarga del repo
-compilacion
-instalacion
-software base requerido
-etc.
+PROGRAM DESCRIPTION
+Dailyproyects is a simple program to keep proyects up to date, simple to use and access as it is implemented as a web app. You can download it from:
+
+  https://github.com/Juanmam/ttelematica/tree/stable
+
+REQUIREMENTS:
+	- Node v0.10.25 or above
+	- MySQL 5.0 or above
+	- Linux server recomended, LAMP or XAMPP should work
+
+If you find any problems concerning the app, don't doubt to report it at jmejiab1@eafit.edu.co.
