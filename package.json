@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "A web application used to organize projects.",
     "author": "Juan Manuel Mejía Botero <jmejiab1@eafit.edu.co>",
+    "main": "index.js",
     "dependencies": {
 	"ejs": "2.3.3",
 	"express": "4.13.3"
