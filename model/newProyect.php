@@ -4,6 +4,7 @@ $host = "localhost"
 $user = "teluser"
 $pass = "password"
 $db = "tel"
+$table = "proyects"
 
 $link = mysql_connect($host, $user, $pass);
 if (!$link) {
@@ -16,7 +17,7 @@ if (!$current_db) {
    die('Can\'t use the database : ' . mysql_error());
 }
 
-$sql = 'INSERT INTO proyects (PName, Desc, IDate, EDate)
+$sql = 'INSERT INTO $table (pname, desc, idate, edate)
 VALUES ("' . $pname . '", "' . $desc . '", "' . $idate . '", "' . $edate . '")';
 
 $retval = mysql_query($sql, $link);

@@ -9,7 +9,6 @@ function newP(){
     console.log("descripcion: " + desc);
     console.log("init date: " + idate);
     console.log("end date: " + edate);
-    var sdata = ;
     if(name==""||desc==""||idate==""||edate==""){
 	alert("Error: Missing atribute. Fill all slots required.\n"+
 	     "All slots marked with * are required.");
@@ -18,9 +17,11 @@ function newP(){
 	$.ajax({
 	    type: 'POST',
 	    url: url,
-	    dataType: 'json'
-	    success: function(data){
-		//TODO :(
+	    data: { pname: name, desc: desc, idate: idate, edate: edate }
+	}).done(function( msg ){
+	    alert("Data saved: " + msg);
+	});
+	
     }
 }
 
