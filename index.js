@@ -9,10 +9,16 @@ var path = require("path");
 var port = 5000;
 var index = 'views/index.html';
 
+console.log(__dirname + index);
+
 app.get('/views', function(req,res) {
     res.render(path.join(__dirname + index));
 });
 
+console.log(path.join(__dirname + index););
+
 app.listen(app.get('port'), function() {
     console.log('Node app is running on port ', app.get('port'));
 });
+
+console.log('port: ' + app.get('port'));
