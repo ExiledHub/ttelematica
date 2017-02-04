@@ -9,7 +9,7 @@ var path = require("path");
 var port = 5000;
 var index = 'views/index.html';
 
-app.get('/', function(req,res) {
+app.get('/views', function(req,res) {
     res.render(path.join(__dirname + index));
 });
 
