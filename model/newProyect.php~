@@ -1,7 +1,0 @@
-<?php
-
-$host = "localhost"
-$user = ""
-$pass = ""
-
-$link = mysql_connect($host, $user, $pass);
