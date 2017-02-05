@@ -2,8 +2,6 @@
 # Dockerfile :D
 #####################################################################
 
-FROM ubuntu:15.10
+FROM php:7.0-apache
 
-COPY ./src/views/index.html /views/index.html
-
-CMD ["cat","/views/index.html"]
+COPY src/ /var/www/html
