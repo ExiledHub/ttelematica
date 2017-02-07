@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost"
-$user = "teluser"
-$pass = "password"
-$db = "tel"
+$host = "localhost";
+$user = "teluser";
+$pass = "password";
+$db = "tel";
 
 $link = mysql_connect($host, $user, $pass);
 if (!$link) {
@@ -16,8 +16,13 @@ if (!$current_db) {
    die('Can\'t use the database : ' . mysql_error());
 }
 
-$sql = 'INSERT INTO proyects (PName, Desc, IDate, EDate)
-VALUES ("' . $pname . '", "' . $desc . '", "' . $idate . '", "' . $edate . '")';
+$pname = $_POST['pname'];
+$pdesc =  $_POST['pdesc'];
+$idate = $_POST['idate'];
+$edate = $_POST['edate'];
+
+$sql = 'INSERT INTO proyects (pname, pdesc, idate, edate)
+VALUES ("' . $pname . '", "' . $pdesc . '", "' . $idate . '", "' . $edate . '")';
 
 $retval = mysql_query($sql, $link);
 

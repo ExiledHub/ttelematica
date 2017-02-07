@@ -3,7 +3,8 @@
 <html>
   <head>
     <title>Register</title>
-    <script src="../controllers/new.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="controllers/new.js"></script>
   </head>
   <body>
     <header>
@@ -15,16 +16,16 @@
 	</strong>
       </div>
     </header>
-
+    
     <div class="container" align="center">
       *Proyect Name:<br>
-      <input type="text" id="pname"><br><br>
+      <input type="text" id="pname" name="pname"><br><br>
       Description:<br>
-      <input type="text" id="desc"><br><br>
+      <input type="text" id="desc" name="desc"><br><br>
       *Start Date:<br>
-      <input type="date" id="initdate"><br><br>
+      <input type="date" id="initdate" name="idate"><br><br>
       *End Date:<br>
-      <input type="date" id="enddate"><br><br>
+      <input type="date" id="enddate" name="edate"><br><br>
       <button id="submit" onclick="newP()">
 	Submit
       </button>
