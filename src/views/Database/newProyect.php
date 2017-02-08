@@ -7,7 +7,7 @@ $db = "tel";
 
 $link = mysql_connect($host, $user, $pass);
 if (!$link) {
-	die('NOt connected : ' . mysql_error());
+	die('Not connected : ' . mysql_error());
 }
 
 $current_db = mysql_select_db($db, $link);
@@ -17,7 +17,7 @@ if (!$current_db) {
 }
 
 $pname = $_POST['pname'];
-$pdesc =  $_POST['pdesc'];
+$pdesc =  $_POST['desc'];
 $idate = $_POST['idate'];
 $edate = $_POST['edate'];
 

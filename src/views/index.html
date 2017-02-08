@@ -1,6 +1,8 @@
 <HTML>
   <HEAD>
     <TITLE>Home</TITLE>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <SCRIPT src="controllers/index.js"></SCRIPT>
   </HEAD>
   <BODY>
     <HEADER>
@@ -14,5 +16,21 @@
 	</A>
       </STRONG>
     </HEADER>
+
+    <div class="container">
+      <table class="table table-striped table-bordered table-hover">
+      <thead>
+	<tr>
+	  <th>Project Name</th>
+	  <th>Project Description</th>
+	  <th>Initial Date</th>
+	  <th>End Date</th>
+	</tr>
+      </thead>
+      <tbody id="projectsT">
+
+      </tbody>
+      </table>
+    </div>
   </BODY>
 </HTML>
