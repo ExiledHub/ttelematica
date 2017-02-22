@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto); /*Google font*/
+
+header {
+    padding: 10px;
+    text-align: left;
+}
+
+#left {
+    float: left;
+}
+
+#right {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    background: #999;
+}

@@ -3,3 +3,9 @@ compilacion
 instalacion
 software base requerido
 etc.
+
+Estructura
+- resources/views/.php (html)
+- routes/web.php
+- public/css
+- public/js
