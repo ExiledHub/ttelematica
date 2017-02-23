@@ -13,11 +13,14 @@ class CreateProjectsTable extends Migration
      */
     public function up()
     {
-        Schema::create('projects', function (Blueprint $table) {
-            $table->string('name');
-            $table->string('description');
+	Schema::defaultStringLength(191);
+	Schema::create('projects', function (Blueprint $table) {
+            $table->string('pname')->unique();
+            $table->string('pdesc');
 	    $table->date('idate');
 	    $table->date('edate');
+	    $table->timestamp('updated_at')->nullable();
+	    $table->timestamp('created_at')->nullable();
         });
     }
 

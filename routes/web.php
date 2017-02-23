@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::resource('create', 'NewProject');
 
-Route::get('/new', function (){
-    return view('new');
-});
+Route::get('/', 'ProjectsController@index');
+
+Route::get('/new', 'ProjectsController@create');
+
+Route::post('/posts','ProjectsController@store');

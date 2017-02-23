@@ -1,16 +1,40 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto); /*Google font*/
 
 header {
-    padding: 10px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 30px;
     text-align: left;
+    width: 100%;
+    background: #999;
 }
 
 #left {
+    position: fixed;
+    left: 10px;
     float: left;
+    display: table;
+    margin: 0 auto;
 }
 
 #right {
+    position: fixed;
+    right: 10px;
     float: right;
+}
+
+#formid {
+    position: fixed;
+    left: 25px;
+    top: 55px;
+    
+}
+
+#mainBody {
+    position: fixed;
+    top: 30px;
+    
 }
 
 a {

@@ -29,11 +29,28 @@
 	</div>
       </div>
     </header>
-    <br>
+    <!--<br>-->
     
-    <a> dis </a>
-    <div class="container">
-      <a> body </a>
+    <div class="container" id="mainBody">
+      <a> body </a><br>
+      @if (count($Projects) > 0)
+          <table>
+	    <tr>
+	      <th>Project Name</th>
+	      <th>Project Description</th>
+	      <th>Initial Date</th>
+	      <th>End Date</th>
+	    </tr>
+          @foreach ($Projects as $Project)
+            <tr>
+	      <td align="center">{{ $Project->pname }}</td>
+	      <td align="center">{{ $Project->pdesc }}</td>
+	      <td align="center">{{ $Project->idate }}</td>
+	      <td align="center">{{ $Project->edate }}</td>
+	    </tr>
+          @endforeach
+	  </table>    
+      @endif
     </div>
     
     <footer>
