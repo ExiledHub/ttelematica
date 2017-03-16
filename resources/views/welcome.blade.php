@@ -11,7 +11,7 @@
       <div class="container">
 	<div id="left">
 	  <strong>
-	    <a href="/new">
+	    <a href="new">
 	      New
 	    </a>
 	  </strong>

@@ -18,16 +18,11 @@ class ProjectsController extends Controller
     {
 	
 	//$pdo = DB::connection('mysql')->getPdo();
-	
-	//try {
-	//    $pdo = new PDO('mysql:dbname=tel;host=10.131.137.199','teluser','cocacola042g');
-	//} catch (PDOException $e){
-	//  die("Error:" . $e->getMessage());
-	//}
-	
+
 	try {
-	  $Projects = \DB::table('projects')->get();
-	} catch (PDOException $e) {
+	    $Projects = \DB::table('projects')->get();
+	} catch (Exception $e) {
+	  //PDOException $e) {
 	  die("DB ERROR: " . $e->getMessage() . "\n");
 	}
 
@@ -43,7 +38,7 @@ class ProjectsController extends Controller
      */
     public function create()
     {
-        return view('new');
+	return view('new');
     }
 
     /**
@@ -65,9 +60,12 @@ class ProjectsController extends Controller
 	$project->pdesc = request('pdesc');
 	$project->idate = request('idate');
 	$project->edate = request('edate');
-
-	$project->save();
-
+	$project->timestamps = false;
+	try{
+	  $project->save();
+	} catch (Exception $e) {
+	  die("Error: " . $e->getMessage());
+	}
 	return redirect('/');
     }
 }

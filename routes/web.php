@@ -15,6 +15,6 @@ Route::resource('create', 'NewProject');
 
 Route::get('/', 'ProjectsController@index');
 
-Route::get('/new', 'ProjectsController@create');
+Route::get('/new', 'NewController@index');
 
 Route::post('/posts','ProjectsController@store');
