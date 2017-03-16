@@ -49,8 +49,7 @@
 	  <br><br>
 	  {{ Form::submit(
 	  'Submit',
-	  array(
-	  'class'=>'btn'))
+	  array('class'=>'btn'))
 	}}
 	</form>
       </div>

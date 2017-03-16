@@ -4,6 +4,7 @@
     <title>Home</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link href="{{ URL::asset('css/general.css') }}" rel="stylesheet"/><!-- For css files. -->
+    
     <!--<link href="{{ URL::asset('js/script.js') }}" rel="script">--> <!-- For js files -->
   </head>
   <body>
@@ -11,7 +12,7 @@
       <div class="container">
 	<div id="left">
 	  <strong>
-	    <a href="/new">
+	    <a href="new">
 	      New
 	    </a>
 	  </strong>
