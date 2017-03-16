@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Project;
+use PDO;
 
 class ProjectsController extends Controller
 {
@@ -15,7 +16,22 @@ class ProjectsController extends Controller
      
     public function index()
     {
-	$Projects = \DB::table('projects')->get();
+	
+	//$pdo = DB::connection('mysql')->getPdo();
+	
+	//try {
+	//    $pdo = new PDO('mysql:dbname=tel;host=10.131.137.199','teluser','cocacola042g');
+	//} catch (PDOException $e){
+	//  die("Error:" . $e->getMessage());
+	//}
+	
+	try {
+	  $Projects = \DB::table('projects')->get();
+	} catch (PDOException $e) {
+	  die("DB ERROR: " . $e->getMessage() . "\n");
+	}
+
+	//return view('welcome');
 	
         return view('welcome', compact('Projects'));
     }
