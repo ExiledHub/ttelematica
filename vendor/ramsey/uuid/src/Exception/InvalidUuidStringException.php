@@ -11,13 +11,12 @@
  * @link https://packagist.org/packages/ramsey/uuid Packagist
  * @link https://github.com/ramsey/uuid GitHub
  */
-namespace Ramsey\Uuid\Codec;
+
+namespace Ramsey\Uuid\Exception;
 
 /**
- * TimestampLastCombCodec encodes and decodes COMB UUIDs which have the timestamp as the last 48 bits.
- * To be used with MSSQL.
+ * Thrown to indicate that the parsed UUID string is invalid.
  */
-class TimestampLastCombCodec extends StringCodec
+class InvalidUuidStringException extends \InvalidArgumentException
 {
-
 }
