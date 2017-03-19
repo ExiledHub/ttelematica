@@ -172,6 +172,7 @@ return [
         /*
          * Application Service Providers...
          */
+	Auth0\Login\LoginServiceProvider::class,
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
@@ -192,7 +193,7 @@ return [
     */
 
     'aliases' => [
-
+        
         'App' => Illuminate\Support\Facades\App::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
@@ -228,6 +229,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+	'Auth0' => Auth0\Login\Facade\Auth0::class
 
     ],
 

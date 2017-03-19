@@ -11,6 +11,8 @@
 |
 */
 
+Route::get('/auth0/callback', '\Auth0\Login\Auth0Controller@callback');
+
 Route::resource('create', 'NewProject');
 
 Route::get('/', 'ProjectsController@index');
@@ -18,3 +20,8 @@ Route::get('/', 'ProjectsController@index');
 Route::get('/new', 'NewController@index');
 
 Route::post('/posts','ProjectsController@store');
+
+Route::get('/logout', function() {
+    Auth::logout();
+    return Redirect::home();
+});
